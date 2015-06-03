@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DEC09209-6EE5-4737-9E7C-BB5D6ACAA197}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{22A75C59-5D78-45B5-91A3-055B9A8C079A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{D3E6AE60-3BB1-4537-BCE5-4E73D21C882B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.BusinessLogic", "src\D2DQuest.BusinessLogic\D2DQuest.BusinessLogic.csproj", "{F17FCAA0-F077-4884-8A2B-A04D5BC780A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.Contracts", "src\D2DQuest.Contracts\D2DQuest.Contracts.csproj", "{2A602CE3-2AF1-4586-90A5-5BC139F781FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.DataAccessLayer", "src\D2DQuest.DataAccessLayer\D2DQuest.DataAccessLayer.csproj", "{8E805317-CAE1-40D2-BB56-997F49495A9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.Web", "src\D2DQuest.Web\D2DQuest.Web.csproj", "{05EF1FAD-48EC-4D9D-AC5D-B2C45BA23B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.Tests", "test\D2DQuest.Tests\D2DQuest.Tests.csproj", "{7DAEAED9-43E2-4727-93A3-52C298775D82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.ObjectDomain", "src\D2DQuest.ObjectDomain\D2DQuest.ObjectDomain.csproj", "{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2DQuest.DataImport", "tools\D2DQuest.DataImport\D2DQuest.DataImport.csproj", "{1C3E20EA-A697-458F-A02B-00F76D6B86EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{65982B2F-902F-49C4-B7A8-64D1C7628586}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{35F5FED1-CBB2-41AD-B151-BB9A1F30D805}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F17FCAA0-F077-4884-8A2B-A04D5BC780A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17FCAA0-F077-4884-8A2B-A04D5BC780A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17FCAA0-F077-4884-8A2B-A04D5BC780A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17FCAA0-F077-4884-8A2B-A04D5BC780A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A602CE3-2AF1-4586-90A5-5BC139F781FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A602CE3-2AF1-4586-90A5-5BC139F781FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A602CE3-2AF1-4586-90A5-5BC139F781FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A602CE3-2AF1-4586-90A5-5BC139F781FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E805317-CAE1-40D2-BB56-997F49495A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E805317-CAE1-40D2-BB56-997F49495A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E805317-CAE1-40D2-BB56-997F49495A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E805317-CAE1-40D2-BB56-997F49495A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EF1FAD-48EC-4D9D-AC5D-B2C45BA23B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EF1FAD-48EC-4D9D-AC5D-B2C45BA23B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EF1FAD-48EC-4D9D-AC5D-B2C45BA23B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EF1FAD-48EC-4D9D-AC5D-B2C45BA23B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAEAED9-43E2-4727-93A3-52C298775D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAEAED9-43E2-4727-93A3-52C298775D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAEAED9-43E2-4727-93A3-52C298775D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAEAED9-43E2-4727-93A3-52C298775D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3E20EA-A697-458F-A02B-00F76D6B86EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3E20EA-A697-458F-A02B-00F76D6B86EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3E20EA-A697-458F-A02B-00F76D6B86EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3E20EA-A697-458F-A02B-00F76D6B86EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F17FCAA0-F077-4884-8A2B-A04D5BC780A1} = {DEC09209-6EE5-4737-9E7C-BB5D6ACAA197}
+		{2A602CE3-2AF1-4586-90A5-5BC139F781FD} = {DEC09209-6EE5-4737-9E7C-BB5D6ACAA197}
+		{8E805317-CAE1-40D2-BB56-997F49495A9E} = {DEC09209-6EE5-4737-9E7C-BB5D6ACAA197}
+		{05EF1FAD-48EC-4D9D-AC5D-B2C45BA23B8F} = {DEC09209-6EE5-4737-9E7C-BB5D6ACAA197}
+		{7DAEAED9-43E2-4727-93A3-52C298775D82} = {22A75C59-5D78-45B5-91A3-055B9A8C079A}
+		{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11} = {DEC09209-6EE5-4737-9E7C-BB5D6ACAA197}
+		{1C3E20EA-A697-458F-A02B-00F76D6B86EB} = {D3E6AE60-3BB1-4537-BCE5-4E73D21C882B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A602CE3-2AF1-4586-90A5-5BC139F781FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>D2DQuest.Contracts</RootNamespace>
+    <AssemblyName>D2DQuest.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Exceptions\RegisterWordCommandException.cs" />
+    <Compile Include="Commands\Exceptions\VisiterNotExistException.cs" />
+    <Compile Include="Commands\Exceptions\WordNotExistException.cs" />
+    <Compile Include="Commands\Exceptions\WordRegistedAlreadyException.cs" />
+    <Compile Include="Commands\IRegisterWordCommand.cs" />
+    <Compile Include="DataAccessLayer\ConnectionProvider.cs" />
+    <Compile Include="DataAccessLayer\Exceptions\DbException.cs" />
+    <Compile Include="DataAccessLayer\IConnectionProvider.cs" />
+    <Compile Include="DataAccessLayer\IUnitOfWork.cs" />
+    <Compile Include="DataAccessLayer\IUnitOfWorkFactory.cs" />
+    <Compile Include="Exceptions\LogicException.cs" />
+    <Compile Include="Exceptions\WrappedUnexpectedException.cs" />
+    <Compile Include="Queries\Exceptions\RegistrationsEmptyException.cs" />
+    <Compile Include="Queries\Exceptions\WinnerQueryException.cs" />
+    <Compile Include="Queries\IWinnerQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\D2DQuest.ObjectDomain\D2DQuest.ObjectDomain.csproj">
+      <Project>{C0E5EDD7-9438-403C-9EAF-AAD3037EBD11}</Project>
+      <Name>D2DQuest.ObjectDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

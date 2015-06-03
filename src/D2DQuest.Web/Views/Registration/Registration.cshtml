@@ -1,0 +1,41 @@
+﻿@model D2DQuest.Web.ViewModels.RegistrationViewModel
+
+@{
+    ViewBag.Title = "D2D Quest: Регистрация слов";
+    Layout = "~/Views/Shared/_PublicLayout.cshtml";
+}
+
+@section links {
+    <p>
+        @Html.ActionLink("Нужно больше информации?", "Information", "Information")
+    </p>
+    <p>
+        @Html.ActionLink("Попробуешь выиграть?", "Raffle", "Raffle")
+    </p>
+}
+
+@using (Ajax.BeginForm("Registration", "Registration", 
+    new AjaxOptions() { OnSuccess = "registerWordAjaxHandler" }))
+{
+    @Html.AntiForgeryToken()      
+    
+    <div class="information">
+        @if (Model != null && Model.Message != null)
+        {
+            @Model.Message
+        }
+        else 
+        { 
+            <span>Ищи слова!</span>
+        }
+    </div>
+    
+    @Html.LabelFor(m => m.UserUid) <br/>
+    @Html.TextBoxFor(m => m.UserUid, new { @class="edit" }) <br/>
+    @Html.ValidationMessageFor(m => m.UserUid)<br/>
+    @Html.LabelFor(m => m.Word) <br/>
+    @Html.TextBoxFor(m => m.Word, new { @class = "edit" }) <br/>
+    @Html.ValidationMessageFor(m => m.Word)<br/>
+ 
+    <input type="submit" class="register" value="Нашел!" />
+}

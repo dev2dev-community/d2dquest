@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/css/public.css")
+</head>
+<body>
+    <div class="centered">
+        <div class="header">
+            <h1>DEV2DEV</h1>
+            <p>
+                Охота за словами началась...
+            </p>
+
+            @RenderSection("links", true)
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <div class="sponsors">
+            <h2>Спонсоры</h2>
+            <ul class="imglst">
+                <li>
+                    <a href="http://ankosoftware.com/">
+                        <img alt="ANKO Tech. ltd" src="~/Content/IMG/anko.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.sis-it.pro/">
+                        <img alt="Сибирские интеграционные системы" src="~/Content/IMG/sis.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ankosoftware.com/">
+                        <img alt="Svarog Systems" src="~/Content/IMG/svarog.jpg">
+                    </a>
+                </li>
+            </ul>
+            <h2>Партнёры</h2>
+            <ul class="imglst">
+                <li>
+                    <a href="http://www.kras.ru/">
+                        <img alt="КБ Искра" src="~/Content/IMG/kbiskra.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.pilotkrsk.ru/">
+                        <img alt="МТБЦ Пилот" src="~/Content/IMG/pilot.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://vk.com/it_center">
+                        <img alt="ИТ-ЦЕНТР" src="~/Content/IMG/openstudio.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.jetbrains.com/">
+                        <img alt="JetBrains" src="~/Content/IMG/jetbrains.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>2015 | Dev2Dev | 30.05</p>
+            <p>этот сайт использует всю мощь <a href="https://cloud.iskrakb.ru">cloud.iskrakb.ru</a></p>
+        </div>
+    </div>
+    @Scripts.Render("~/js/jqall.js")
+    @Scripts.Render("~/js/uh.js")
+</body>
+</html>

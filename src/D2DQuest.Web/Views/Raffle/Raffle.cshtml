@@ -1,0 +1,28 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "D2DQuest: Розыгрыш";
+    Layout = "~/Views/Shared/_PublicLayout.cshtml";
+}
+
+@section links {
+    <p>
+        @Html.ActionLink("Слова искать будешь?", "Registration", "Registration")
+    </p>
+    <p>
+        @Html.ActionLink("Больше информации нужно?", "Information", "Information")
+    </p>
+}
+
+<p>
+    Да, это то самое место, где будет происходить розыгрыш призов. Генератор случайных чисел выберет победителей.
+    Уже прямо сейчас, обновляя страницу или нажимая кнопку "Следующий", ты можешь испытать удачу.
+</p>
+
+<div class="winner">
+    @Model
+</div>
+
+<div class="next">
+    @Html.ActionLink("Следующий!", "Raffle")
+</div>

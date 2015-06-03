@@ -1,0 +1,116 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18pt;
+    color: white;
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+}
+
+    div.centered {
+        width: 480px;
+        margin: auto;
+        height: 10px;
+    }
+
+    div.header {
+        background-color: indianred;
+        text-align: center;
+        padding: 20px;
+    }
+
+    div.content {
+        margin: 20px 0;
+    }
+
+        input.edit {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14pt;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        input.register {
+            background-color: indianred;
+            border: none;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18pt;
+            padding: 15px;
+            margin: 20px 0;
+            width: 100%;
+            display: block;
+            cursor: pointer;
+        }
+
+        div.information {
+            background-color: white;
+            font-size: 20pt;
+            padding: 20px;
+            color: indianred;
+            margin: 20px 0;
+        }
+
+    div.sponsors {
+        border: 10px solid indianred;
+        color: cadetblue;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+    }
+        
+        ul.imglst {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.imglst li {
+            display: inline;
+            margin: 20px;
+        }
+
+        ul.imglst li img {
+            vertical-align: middle;
+            margin: 20px;
+        }
+
+    div.warning {
+        color: white;
+        background-color: indianred;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+   div.footer {
+       color: white;
+       text-align: center;
+       font-size: 12px;
+       background-color: indianred;
+       margin-top: 20px;
+       padding: 30px;
+   }
+
+   div.winner, div.next {
+       color: white;
+       text-align: center;
+       font-size: 20px;
+       background-color: indianred;
+       margin: 30px 0;
+       padding: 20px;
+   }
+
+/*common*/
+
+a, a:hover, a:visited {
+    color: white;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
